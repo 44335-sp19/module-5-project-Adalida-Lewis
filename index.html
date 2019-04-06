@@ -4,9 +4,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Module 5 Project</title>
+      <script src="script.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    
-	
+      <!--Jumbotron Header-->
+      <div class="container-fluid">
+          <div class="jumbotron">
+              <h1>Script Programming Jeopardy</h1>
+              <p>Including JavaScript, jQuery, and Bootstrap</p>
+              <p>Note: All answers must be in all lowercase</p>
+              <h3>Score:</h3>
+              <h3 id="score">0</h3>
+          </div>
+      </div>
+      
+      
+      <!--The buttons -->
+      <table class="table">
+          <thread>
+            <tr>
+                <th>JavaScript</th>
+                <th><button onclick="js100()" type="button" class="btn btn-primary">$100</button></th>
+                <th><button onclick="js200()" type="button" id="js200"class="btn btn-success">$200</button></th>
+                <th><button onclick="js300()" type="button" id="js300"class="btn btn-danger">$300</button></th>
+            </tr>
+              
+            <tr>
+                <th>jQuery</th>
+                <th><button onclick="jq100()" type="button" class="btn btn-primary">$100</button></th>
+                <th><button onclick="jq200()" type="button" class="btn btn-success">$200</button></th>
+                <th><button onclick="jq300()" type="button" class="btn btn-danger">$300</button></th>
+            </tr>
+            
+            <tr>
+                <th>Bootstrap</th>
+                <th><button onclick="bs100()" type="button" class="btn btn-primary">$100</button></th>
+                <th><button onclick="bs200()" type="button" class="btn btn-success">$200</button></th>
+                <th><button onclick="bs300()" type="button" class="btn btn-danger">$300</button></th>
+            </tr>
+          </thread>
+      </table>
   </body>
 </html>
